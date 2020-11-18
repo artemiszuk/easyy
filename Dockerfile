@@ -4,7 +4,7 @@ FROM ubuntu:20.04
 RUN mkdir ./app
 RUN chmod 777 ./app
 WORKDIR ./app
-
+RUN apt install ca-certificates
 RUN apt -qq update
 
 ENV DEBIAN_FRONTEND=noninteractive
